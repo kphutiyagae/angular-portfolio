@@ -1,6 +1,17 @@
 @import "../../utils/styles/variables";
 
 .landing-page {
-  display: block;
-  background-color: $primary-background;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: $secondary-background;
+  justify-content: center;
+  align-items: center;
+
+  .landing-page__content {
+    background-color: $primary-background;
+    width: 98%;
+    height: 98%;
+    border-radius: $border-radius;
+  }
 }
