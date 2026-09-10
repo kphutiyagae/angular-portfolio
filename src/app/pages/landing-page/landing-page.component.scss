@@ -15,3 +15,72 @@
     border-radius: $border-radius;
   }
 }
+
+:host {
+  --bg: #0b0e1a;
+  --panel: #1d2440;
+  --fg: #f4f1ea;
+  --accent: #d97757;
+
+  display: block;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  overflow: hidden;
+}
+
+.preloader-panel {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: var(--panel);
+  z-index: 100;
+
+  &.left { left: 0; }
+  &.right { right: 0; }
+}
+
+.counter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+
+  span {
+    font-size: 0.4em;
+    vertical-align: super;
+    opacity: 0.6;
+  }
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+
+  h1 {
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    max-width: 14ch;
+    margin: 0 0 1rem;
+  }
+
+  p {
+    color: #b9bccf;
+    font-size: 1.1rem;
+    max-width: 40ch;
+    margin: 0 auto;
+  }
+
+  .accent { color: var(--accent); }
+}
