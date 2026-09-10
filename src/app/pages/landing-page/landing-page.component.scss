@@ -18,15 +18,10 @@
 }
 
 :host {
-  --bg: #0b0e1a;
-  --panel: #1d2440;
-  --fg: #f4f1ea;
-  --accent: #d97757;
-
   display: block;
   height: 100%;
-  background: var(--bg);
-  color: var(--fg);
+  background: $primary-background;
+  color: $text-white;
   overflow: hidden;
 }
 
@@ -35,7 +30,7 @@
   top: 0;
   height: 100%;
   width: 50%;
-  background: var(--panel);
+  background: $primary-color;
   z-index: 100;
 
   &.left { left: 0; }
@@ -52,6 +47,7 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   font-variant-numeric: tabular-nums;
+  color: $text-white;
 
   span {
     font-size: 0.4em;
