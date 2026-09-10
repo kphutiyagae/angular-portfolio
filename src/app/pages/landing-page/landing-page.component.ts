@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { IonCard, IonContent } from '@ionic/angular';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [],
+  imports: [IonCard, IonContent],
   templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss'
+  styleUrl: './landing-page.component.scss',
+  standalone: true
 })
 export class LandingPageComponent {
 
