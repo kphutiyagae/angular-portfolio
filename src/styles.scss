@@ -1,10 +1,21 @@
-*{
+@import '@ionic/angular/css/core.css';
+@import '@ionic/angular/css/normalize.css';
+@import '@ionic/angular/css/structure.css';
+@import '@ionic/angular/css/typography.css';
+@import '@ionic/angular/css/display.css';
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
+html, body, app-root {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
 }
