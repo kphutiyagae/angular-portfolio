@@ -67,6 +67,9 @@
                 "input": "src/theme/variables.css"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/styles"]
+            },            
             "scripts": [],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -131,6 +134,9 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/styles"]
+            },
             "scripts": []
           }
         },
